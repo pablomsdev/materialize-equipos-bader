@@ -246,8 +246,8 @@ $(function() {
 $(function() {
 
     //set your google maps parameters
-    var latitude = 40.7412541,
-        longitude = -74.0040725,
+    var latitude = 42.139172,
+        longitude = -8.789282,
         map_zoom = 14;
 
     //google map custom marker icon - .png fallback for IE11
@@ -266,7 +266,7 @@ $(function() {
             stylers: [{
                 saturation: saturation_value
             }]
-        }, { //poi stands for point of interest - don't show these lables on the map 
+        }, { //poi stands for point of interest - don't show these lables on the map
             featureType: "poi",
             elementType: "labels",
             stylers: [{
@@ -463,7 +463,7 @@ $(function() {
         }
         //inizialize the map
     var map = new google.maps.Map(document.getElementById('google-container'), map_options);
-    //add a custom marker to the map                
+    //add a custom marker to the map
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(latitude, longitude),
         map: map,
@@ -473,7 +473,7 @@ $(function() {
 
     //add custom buttons for the zoom-in/zoom-out on the map
     function CustomZoomControl(controlDiv, map) {
-        //grap the zoom elements from the DOM and insert them in the map 
+        //grap the zoom elements from the DOM and insert them in the map
         var controlUIzoomIn = document.getElementById('cd-zoom-in'),
             controlUIzoomOut = document.getElementById('cd-zoom-out');
         controlDiv.appendChild(controlUIzoomIn);
